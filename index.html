@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url("./pexels-felixmittermeier-956981.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        button{
+            width: 230px;
+            height: 100px;
+            padding: 10px;
+            border-radius: 10px 40px;
+            color:white;
+            font-weight: bolder;
+            background-color: transparent;
+            font-size: 20px;
+            backdrop-filter: blur(10px);  
+            box-shadow: 2px 0px 20px white;      
+        }
+    </style>
+</head>
+<body>
+    <button id="surprice-btn">SURPRISE FOR YOU</button>
+    <script>
+        var surpriceBtn = document.getElementById("surprice-btn");
+        surpriceBtn.addEventListener("click",function(){
+            window.open("./birthday.html");
+        })
+    </script>
+</body>
+</html>
